@@ -1,0 +1,88 @@
+/* pages/video/video.wxss */
+.videoContainter {
+  padding: 20rpx;
+}
+.header {
+  display: flex;
+}
+.header image {
+  width: 60rpx;
+  height: 60rpx;
+
+}
+.header .search {
+  flex: 1; 
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border: 1rpx solid #eee;
+  margin: 0 20rpx;
+}
+/* 标签栏区域 */
+.scroll {
+  display: flex;
+  height: 60rpx;
+  white-space: nowrap;
+}
+.scroll-item {
+  flex: 1;
+  margin-right: 50rpx;
+  line-height: 60rpx;
+}
+.active {
+  border-bottom: 4rpx solid #ec4141;
+  color: #ec4141;
+} 
+.videoScroll {
+  /* calc: 可以动态计算css的宽高， 运算符左右两侧必须加空格，否则计算会失效 */
+  /* 视口单位： vh vw  1vh = 1%的视口高度  1vw = 1%的视口宽度*/
+  margin-top: 10rpx;
+  height:calc(100vh - 158rpx);
+}
+
+.video-scroll-item .common {
+  width: 100%;
+  border-radius: 20rpx;
+}
+/* .video-scroll-item video::-webkit-media-controls-enclosure {
+  display: none !important;
+} */
+.video-scroll-item .title {
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ 
+}
+.video-scroll-item .footer {
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 26rpx;
+  justify-content: space-between;
+  border-top: 1rpx solid #eee;
+}
+.footer image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+.footer .right .iconfont{
+  font-size: 26rpx;
+}
+.footer .right .praise {
+  margin-right: 10rpx;
+}
+
+.footer .right .btn {
+  display: inline;
+  background: transparent;
+  border: 0;
+  outline: none;
+  margin-left: 10rpx;
+}

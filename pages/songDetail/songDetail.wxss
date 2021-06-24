@@ -1,0 +1,116 @@
+/* pages/songDetail/songDetail.wxss */
+.songDetailContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, .4);
+  height: 100%;
+}
+.dot {
+  position: absolute;
+  top: 60rpx;
+  z-index: 10;
+  width: 60rpx;
+  height: 60rpx;
+  background: #fff;
+  border-radius: 50%;
+}
+.nendle {
+  position: absolute;
+  top: 80rpx;
+  left: 334rpx;
+  z-index: 9;
+  width: 192rpx;
+  height: 300rpx;
+  /* 设置旋转的基点 */
+  transform-origin: 50rpx 0;
+  /* transform: rotate(-30deg); */
+  transition: transform linear 1s;
+}
+.active {
+  transform-origin: 50rpx 0;
+  transform: rotate(-30deg);
+  transition: transform linear 1s;
+} 
+.nendle image {
+  width: 192rpx;
+  height: 300rpx;
+  
+  /* margin-top: 45rpx; */
+  /* margin-left: 110rpx; */
+}
+.dis {
+  position: relative;
+  top: 200rpx;
+  width: 598rpx;
+  height: 598rpx;
+}
+.disAnimation {
+  /* linear匀速旋转 infinite无限次旋转 */
+  animation: dis 4s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes dis {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+.dis .disPic {
+  width: 598rpx;
+  height: 598rpx;
+}
+.dis .musicPic {
+  position: absolute;
+  top: 110rpx;
+  left: 110rpx;
+  width: 370rpx;
+  height: 370rpx;
+  border-radius: 50%;
+}
+.progressControl {
+  display: flex;
+  position: absolute;
+  bottom: 200rpx;
+}
+.progressControl .bar {
+  position: relative;
+  width: 500rpx;
+  height: 5rpx;
+  background: #fff;
+  margin: auto 10rpx;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  height: 5rpx;
+  background: #ec4141;
+}
+.cover .dot {
+  position: absolute;
+  top: -5rpx;
+  right: -5rpx;
+  width: 15rpx;
+  height: 15rpx;
+  background: #fff;
+  border-radius: 50%;
+}
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0rpx;
+  width: 100%;
+  border-top: 1rpx solid #fff;
+}
+.footer .iconfont {
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 50rpx;
+}
+.footer .big {
+  font-size: 60rpx;
+}

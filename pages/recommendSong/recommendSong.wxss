@@ -1,0 +1,72 @@
+/* pages/recommendSong/recommendSong.wxss */
+.header {
+  position: relative;
+  height: 300rpx;
+}
+.header image {
+  width: 100%;
+  height: 300rpx;
+}
+.header .date {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  margin-left: -50rpx;
+  margin-top: -25rpx;
+  color: #fff;
+}
+.header .date .day {
+  font-size: 38rpx;
+}
+.listContainer {
+  position: relative;
+  top: -30rpx;
+  padding: 0rpx 20rpx;
+  background: #fff;
+  border-radius: 30rpx;
+}
+.list-header {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.list-header .iconfont {
+  font-size: 40rpx;
+  color: #ec4141;
+  margin-left: 20rpx;
+}
+.list-header .allSeclet {
+  float: right;
+}
+.ListScroll {
+  height: calc(100vh - 385rpx);
+}
+.scroll-item {
+  display: flex;
+  position: relative;
+  padding-top: 20rpx;
+}
+.scroll-item image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+  vertical-align: middle;
+}
+.scroll-item .item {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 24rpx;
+}
+.scroll-item .more {
+  position: absolute;
+  right: 0;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: right;
+}
